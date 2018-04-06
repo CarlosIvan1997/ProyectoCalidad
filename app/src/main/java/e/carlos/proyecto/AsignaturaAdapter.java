@@ -91,8 +91,8 @@ public class AsignaturaAdapter extends RecyclerView.Adapter<AsignaturaAdapter.As
     }
 
     public interface OnAsignaturaItemClickListener{
-        void onItemClick(Asignatura asignatura);// metodo para eliminar un item
-        void onEditarAsignaturaClick(Asignatura asignatura);//metodo para el click del boton editar
+        void onItemClick(Asignatura asignatura);
+        void onEditarAsignaturaClick(Asignatura asignatura);
         void onEliminarAsignaturaClick(Asignatura asignatura);
     }
 }

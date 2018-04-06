@@ -1,4 +1,4 @@
-package e.carlos.proyecto;
+package e.carlos.proyecto.dao;
 
 import android.app.Application;
 

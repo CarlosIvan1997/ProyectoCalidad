@@ -15,6 +15,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import e.carlos.proyecto.dao.DaoApplication;
 import e.carlos.proyecto.modelos.Asignatura;
 import e.carlos.proyecto.modelos.DaoSession;
 
@@ -51,6 +52,9 @@ public class ListaAsignaturas extends AppCompatActivity implements AsignaturaAda
         asignaturas = daoSession.getAsignaturaDao().loadAll();
         asignaturaAdapter.addList(asignaturas);
 
+        if(asignaturas.size()==0){
+            Toast.makeText(this, "No hay asignaturas", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public static void start(Context context) {

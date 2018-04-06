@@ -11,6 +11,7 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import e.carlos.proyecto.dao.DaoApplication;
 import e.carlos.proyecto.modelos.Asignatura;
 import e.carlos.proyecto.modelos.DaoSession;
 
